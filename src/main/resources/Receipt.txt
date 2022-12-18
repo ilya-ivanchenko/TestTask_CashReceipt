@@ -3,6 +3,6 @@
 QTY   DESCRIPTION                      PRICE      TOTAL
 
  2    Shampoo 500ml                    $3,95      $7,90
- 9    Dark chocolate                   $3,65     $32,81
+ 5    Drinking water 1.5l              $0,99      $4,95
 -------------------------------------------------------
-TOTAL                                            $40,71
+TOTAL                                            $12,85

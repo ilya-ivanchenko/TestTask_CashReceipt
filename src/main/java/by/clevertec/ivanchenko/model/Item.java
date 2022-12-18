@@ -25,7 +25,7 @@ public class Item {
         itemList.put(7, "Georgian red wine");
         itemList.put(8, "Beer 0.5l");
         itemList.put(9, "Toothpaste");
-        itemList.put(10, "Book 'Java.Herbert Schildt'");
+        itemList.put(10, "Book 'Java. Herbert Schildt'");
     }
 
     public void createItemPrice() {
