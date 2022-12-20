@@ -10,7 +10,4 @@ public class ReceiptException extends RuntimeException {
         super(message);
     }
 
-    public ReceiptException() {
-
-    }
 }

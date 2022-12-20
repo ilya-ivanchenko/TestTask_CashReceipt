@@ -1,10 +1,8 @@
 package by.clevertec.ivanchenko.print;
 
 import by.clevertec.ivanchenko.util.OutputFileNotFoundException;
-import by.clevertec.ivanchenko.util.ReceiptException;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintStream;
 
 public class ReceiptPrint {
@@ -13,9 +11,9 @@ public class ReceiptPrint {
 
     public void initialize() {
         try {
-            printStream = new PrintStream("../resources/Receipt.txt");
+            printStream = new PrintStream("src/main/resources/Receipt.txt");
         } catch (FileNotFoundException exp) {
-            throw new OutputFileNotFoundException("Can't find output file", exp);
+            throw new OutputFileNotFoundException("Error: can't find output file", exp);
         }
     }
 
