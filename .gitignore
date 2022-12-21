@@ -12,6 +12,8 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+lib/
+
 
 build.gradle
 gradlew

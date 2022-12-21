@@ -43,7 +43,6 @@
 //        receiptPrint.initialize();
 //        receiptPrint.printHeader();
 //        if ((args[args.length - 1]).matches("card-\\d+")) {
-//                                                                                                                    // EDIT: Check on existing card in DB
 //            discountCard = 0.7;                                                                                  // I decided our suggestion for regular customers must be extremely good
 //        }
 //
@@ -75,5 +74,4 @@
 //        }
 //        receiptPrint.printTotal(totalSum);
 //    }
-//
 //}

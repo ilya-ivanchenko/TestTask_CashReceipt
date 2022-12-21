@@ -3,7 +3,6 @@ package by.clevertec.ivanchenko.service;
 import by.clevertec.ivanchenko.model.Item;
 import by.clevertec.ivanchenko.print.ReceiptPrint;
 
-import by.clevertec.ivanchenko.util.ReceiptException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +13,9 @@ public class ReceiptServiceRest {
     double discountCard;
     double discountItem;
     double totalSum;
+    int quantity;
+    double countPrice;
+    double countTotal;
 
     ReceiptPrint receiptPrint = new ReceiptPrint();
 
@@ -43,14 +45,14 @@ public class ReceiptServiceRest {
 
         for (Integer id : idList) {
             Item currentItem = itemService.findOne(id);
-            int quantity = qtyList.get(idList.indexOf(id));
+            quantity = qtyList.get(idList.indexOf(id));
             discountItem = 1.0;
 
             if (quantity > 5) {
                 discountItem = 0.9;
             }
-            double countPrice = currentItem.getPrice() * discountCard * discountItem;
-            double countTotal = quantity * countPrice;
+            countPrice = currentItem.getPrice() * discountCard * discountItem;
+            countTotal = quantity * countPrice;
             totalSum += countTotal;
             receiptPrint.printItemLine(countPrice, countTotal, quantity, currentItem.getName());
         }

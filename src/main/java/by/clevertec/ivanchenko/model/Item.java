@@ -1,8 +1,6 @@
 package by.clevertec.ivanchenko.model;
 
 import jakarta.persistence.*;
-
-
 import java.util.HashMap;
 import java.util.Map;
 
