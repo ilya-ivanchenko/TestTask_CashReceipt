@@ -9,6 +9,7 @@ If the quantity of products in the receipt more, than 5, customer gives the addi
 
 #### 2) Second version: https://github.com/ivanchenko92/TestTask_CashReceipt/tree/f54811998dca758755682418b2d0ba49140a6837
 Where uses PostgreSQL database, Spring Boot, Spring Data JPA, REST principles. To get the reeipt you need to write GET-request like this:
+
 **http://localhost:8080/item?id=6&qty=3&id=4&qty=5&id=9&qty=6&id=7&qty=3&id=10&qty=1&card=111** . The parameter 'id' is the product id and 'qty' is the quantity 
 of products and  there could be card number (the discount would be applied only if given card number exist into the DB). You can get the receipt also in the file or console and in addition to this you can get products and their quantity in JSON:
 
