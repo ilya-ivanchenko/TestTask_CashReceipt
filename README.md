@@ -11,7 +11,7 @@ If the quantity of products in the receipt more, than 5, customer gives the addi
 Where uses PostgreSQL database, JUnit, Spring Boot, Spring Data JPA, REST principles. To get the reeipt you need to write GET-request like this:
 
 **http://localhost:8080/item?id=6&qty=3&id=4&qty=5&id=9&qty=6&id=7&qty=3&id=10&qty=1&card=111** . The parameter 'id' is the product id and 'qty' is the quantity 
-of products and  there could be card number (the discount would be applied only if given card number exist into the DB). You can get the receipt also in the file or console and in addition to this you can get products and their quantity in JSON:
+of products and  there could be card number (the discount would be applied only if given card number exist into the DB). You also can get the receipt in the file or console and in addition to this you gets products and their quantity in JSON:
 
 ![image](https://user-images.githubusercontent.com/90793566/208974630-ac102205-c370-400d-9370-cf7209b28acc.png)
 
